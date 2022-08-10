@@ -1,0 +1,126 @@
+*{margin: 0%;}
+body{ background: linear-gradient(red, darkblue ,)}
+
+
+a{color: white;}
+/*ajuste de tamanho parte superior */
+
+
+@media screen and (min-width:905px){
+.imgP{width: 50%; height: 50%; margin-top: 15px;} 
+
+.text{width: 50%;  display: flex;  flex-direction: column; align-items: center; justify-items: center; margin-top: 15%;}
+
+.btnCurriculo{width: 250px; align-items:center; height: 60px; background-color: blue; color: white; display: flex; justify-content: center;}
+
+.btnlinkedin:hover{text-orientation:sideways ; background-color: black; border:  2px red solid; transition: transform 0.5s ease-in-out ;}
+
+
+.cardONe{margin: 15px; }
+
+.cardONe p {display: none;}
+
+/*  cards do projeto */
+
+
+/* parte de posições*/
+.container{display: flex; }
+
+
+
+
+/*cards dos projetos*/
+#Projetos{text-align: center; margin-top: 150px;}
+#cardone, #cardtwo{display: flex; justify-content: center;  margin-bottom: 15px;} 
+
+
+/*cards das habilidades */
+.containerhabilidade{display: flex; flex-direction: column ; justify-content: space-around; align-items: center ; margin-top: 150px ;} 
+.Habi{display: flex; justify-content: space-between;}
+.Habitwo{display: flex; border: 15px solid transparent;}
+.card{margin: 10px;}
+
+
+}
+
+
+
+/*  cards animados*/
+.card {
+  width: 280px;
+  height: 200px;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  background-color: black;
+  text-align: center;
+}
+.card:hover {
+  transform: translateY(20px);
+}
+.card:hover:before {
+  opacity: 1;
+}
+.card:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+  background-color: rgba(0, 0, 0, 0.010);
+}
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+}
+.card .info {
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+.card .info h1 {
+  margin: 0px;
+}
+.card .info p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+}
+.card .info button {
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.card .info button:hover {
+  
+  color: white;
+}
+.tech{width: 10px;}
