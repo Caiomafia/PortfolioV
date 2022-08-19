@@ -10,3 +10,7 @@ sr.reveal( '.container',{
     rotate:{x:100,y:0,z:10},
     duration:2000
 } )
+
+if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
