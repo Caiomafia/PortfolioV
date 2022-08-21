@@ -7,7 +7,7 @@ sr.reveal('.containerprojetos' , {
 
 
 sr.reveal( '.container',{  
-    rotate:{x:100,y:0,z:10},
+    rotate:{x:450,y:0,z:10},
     duration:2000
 } )
 
