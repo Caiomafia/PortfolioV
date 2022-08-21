@@ -8,7 +8,7 @@ sr.reveal('.containerprojetos' , {
 
 sr.reveal( '.container',{  
     rotate:{x:100,y:0,z:10},
-    duration:2000
+    duration:1000
 } )
 
 if (document.location.search.match(/type=embed/gi)) {
