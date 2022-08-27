@@ -1,41 +1,27 @@
 @media screen and (max-width:900px)
 {
 
-    .container{ width: 85%; display: flex; justify-content: center; align-items: center; flex-direction: column;} 
-    #imgpe{width: 350px; margin-top: 20px;}
-    .text{text-align: center;}
-    .btnCurriculo{background-color: black; color: white;}
+      .container{ width: 85%; display: flex; justify-content: center; align-items: center; flex-direction: column;} 
+      #imgpe{width: 350px; margin-top: 20px; display: flex; justify-content: center; }
+      .text{text-align: center;}
+      .btnCurriculo{background-color: black; color: white;}
+      .container-fluid{ width: 90%;margin: 0;}
 
+      /*cards dos projetos*/
+      #Projetos{text-align: center; margin-top: 50px;}
+      #cardone, #cardtwo{display: flex; justify-content: center;  margin-bottom: 15px;}  
 
+      /*cards das habilidades */
+      .containerhabilidade{display: flex; flex-direction: column ; justify-content: space-around; align-items: center ; margin-top: 150px ;} 
+      .Habi{display: flex; justify-content: center;  width: 90%;}
+      .Habitwo{display: flex; justify-content: center;  width: 90%;}
+      p{display: none;}
+      .card{margin: 5px; margin-bottom: 50px;  text-align: center; }
 
+      /*informação dos cards*/
+      .info{display: flex; flex-direction: column; width: auto; font-size: 15px; text-align: center; }
 
-  
-    
-        
-  
-    
-
-      .container-fluid{ width: 90%;}
-    
-    
-    
-    
-    /*cards dos projetos*/
-    #Projetos{text-align: center; margin-top: 50px;}
-    #cardone, #cardtwo{display: flex; justify-content: center;  margin-bottom: 15px;} 
-    
-    
-    /*cards das habilidades */
-    .containerhabilidade{display: flex; flex-direction: column ; justify-content: space-around; align-items: center ; margin-top: 150px ;} 
-   
-    .Habi{display: flex; justify-content: center;  width: 90%;}
-   
-    .Habitwo{display: flex; justify-content: center;  width: 90%;}
-   
-   p{display: none;}
-   .card{margin: 5px; margin-bottom: 50px;  text-align: center; }
 }
-
 
 
 

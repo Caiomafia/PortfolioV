@@ -3,13 +3,18 @@ body{ background: rgb(0,212,255);
   background: linear-gradient(318deg, rgba(0,212,255,1) 3%, rgba(255,0,0,1) 3%, rgba(35,35,210,1) 100%);
  color: white;
 }
+/* modo laptop */
+.text{display: flex; flex-direction: column; text-align: center; }
+.info{display: flex; flex-direction: column; width: auto; font-size: 15px; text-align: center; }
+
+
+
+
 
 
 
 
 /*ajuste de tamanho parte superior */
-
-
 @media screen and (min-width:905px){
 .imgP{width: 50%; height: 50%; margin-top: 15px;} 
 
@@ -51,8 +56,6 @@ body{ background: rgb(0,212,255);
 
 
 }
-
-
 
 /*  cards animados*/
 .card {
