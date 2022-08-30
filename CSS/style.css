@@ -1,57 +1,26 @@
 *{margin: 0%;}
-body{ background: rgb(0,212,255);
-  background: linear-gradient(318deg, rgba(255,0,0,1) 3%, rgba(35,35,210,1) 100%);
- color: white;
+body{   background: linear-gradient(318deg, rgba(255,0,0,1) 3%, rgba(35,35,210,1) 100%); color: white;
 }
+
+html{width: 100%;}
 /* modo laptop */
 .text{display: flex; flex-direction: column; text-align: center; }
 .info{display: flex; flex-direction: column; width: auto; font-size: 15px; text-align: center; }
-
-
-
 .rede,.redetwo,.redetre{margin: 10px;}
-
-
-
-
-
-
-
 
 /*parte de contatos*/
 .nav-link:hover{background-color: aliceblue; color: black; }
-
 .redesocial{ width: 50%; display: flex; flex-direction:column;  margin-right: auto; margin-left: auto; text-align: center; margin-top: 10%;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*ajuste de tamanho parte superior */
 
 #menu{color: white;}
-
-
-
-
 @media screen and (min-width:905px){
 .imgP{width: 50%; height: 50%; margin-top: 15px;} 
 
 .text{width: 50%;  display: flex;  flex-direction: column; align-items: center; justify-items: center; margin-top: 15%;}
 
-
+.menubtn{width: 5px;}
 
 .cardONe{margin: 15px; }
 
@@ -164,7 +133,6 @@ body{ background: rgb(0,212,255);
   border:  1px solid whitesmoke ;
 }
 .card .info button:hover {
-  
   color: black;
   background-color: white;
 }

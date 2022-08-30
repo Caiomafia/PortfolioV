@@ -21,4 +21,3 @@ if (document.location.search.match(/type=embed/gi)) {
     window.parent.postMessage("resize", "*");
   }
 
-btnbreve(){ alert("esse projeto ainda está sendo produzido")}
