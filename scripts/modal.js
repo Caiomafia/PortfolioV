@@ -2,25 +2,22 @@
 
 const dataProjects = [
     {
-        title: 'DoWhile 2021 Virtual Badge',
+        title: 'RicoFlix',
         date: '24 de Outubro de 2021',
-        description: `O DoWhile 2021 Card é uma aplicação interativa que mostra informações do usuário através da API do GitHub :D <br><br>
+        description: ` <br><br>
 
-        Após concluir o evento, adicionei funcionalidades extras, como: <br><br>
+        Clone  da interface do Netflix tem como forma de aprendizagem e treinar conhecimento adquiridos  , com grandes desafios um deles foi a criação do carrosel, mas com muito tempo e pesquisa o projeto fico sensacional  
+          com uso de Javascript, HTML e CSS. <br><br>
+         <br><br>
         
-        • Modal para o usuário inserir seus próprios dados no Card; <br>
-        • Armazenamento dos dados inseridos pelo usuário no LocalStorage do navegador, fazendo com que as informações sejam mantidas mesmo após fechar a página; <br>
-        • Animação de Flip em 3D (com CSS puro); <br>
-        • Verso do Card com informações sobre o DoWhile 2021; <br>
-        • Versão Desktop e Mobile.`, 
-        videoSrc: 'https://streamable.com/e/qceqn0',
-        linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:6858050562471145472/',
+        `, 
+        fotoSrc: 'https://user-images.githubusercontent.com/91575842/181264963-fe20f879-eb82-4f07-bee1-5e8de94cd37f.png',
         repository: 'https://github.com/rhuanbello/origin-nlw-heat',
         site: 'https://dowhile2021-rhuanbello.vercel.app/'
 
     },
     {
-        title: 'Daily Weather',
+        title: 'Instagram',
         date: '28 de Outubro de 2021',
         description: `Daily Weather é uma aplicação web que exibe a condição climática de todas as cidades, bairros, estados ou países do mundo. Obtendo tanto os dados da temperatura atual, quanto os dos próximos 7 dias, além da velocidade do vento, nível de umidade, data/hora e temperatura máxima e mínima. <br><br>
 
@@ -34,14 +31,14 @@ const dataProjects = [
         • LocalStorage API; <br>
         • Moment.js; <br>
         `, 
-        videoSrc: 'https://streamable.com/e/usgia6',
+        videoSrc: 'ttps://user-images.githubusercontent.com/91575842/181264963-fe20f879-eb82-4f07-bee1-5e8de94cd37f.png',
         linkedin: 'https://www.linkedin.com/feed/update/urn:li:activity:6862799471626059776/',
         repository: 'https://github.com/rhuanbello/dailyweather',
         site: 'https://dailyweather.vercel.app/'
 
     },
     {
-        title: 'Calculadora do Windows 10',
+        title: 'Calculadora',
         date: '14 de Outubro de 2021',
         description: `Esse é um projeto que eu desenvolvi a interface há dois meses atrás, mas que só fui me sentir confiante pra dar continuidade recentemente depois de avançar em meus estudos, pois meu objetivo era de construir toda a lógica do zero, sem utilizar a função eval(). <br><br> Eu ainda não tinha feito uma calculadora, e creio que esse seja um dos principais exercícios pra praticar a lógica de programação, então além de aplicar as funcionalidades e a interface da calculadora do Windows 10, tentei simular uma espécie de ambiente desktop, onde é possível abrir, fechar ou minimizar a aplicação. <br><br>  Algumas features que valem destacar: <br><br>
         • É possível utilizar o teclado para realizar as operações matemáticas; <br>
@@ -49,9 +46,8 @@ const dataProjects = [
         • Só é possível adicionar um ponto decimal; <br>
         • O tamanho da fonte do display se adapta conforme os números são adicionados; <br>
         • Responsivo para Mobile;`,
-        videoSrc: 'https://streamable.com/e/65khi6',
-        linkedin: 'https://www.linkedin.com/posts/rhuanbello_clone-windows-calculator-activity-6854500487987904512-kwzK',
-        repository: 'https://github.com/rhuanbello/clone-windowsCalculator',
+
+        repository: 'https://github.com/Caiomafia/Calculadora',
         site: 'https://calculator-rhuanbello.vercel.app/'
 
     },
@@ -250,7 +246,6 @@ const openModal = () => {
             modalLinkProject.setAttribute('href', dataProjects[index].site) 
             modalLinkRepository.setAttribute('href', dataProjects[index].repository) 
             modalLinkLinkedin.setAttribute('href', dataProjects[index].linkedin) 
-            iframe.setAttribute('src', dataProjects[index].videoSrc + '?autoplay=1&amp;loop=0')
 
         }
 
