@@ -2,7 +2,7 @@
 
 const dataProjects = [
     {
-        title: 'RicoFlix',
+        title: 'Instagram',
         date: '24 de Outubro de 2021',
         description: ` <br><br>
 
@@ -12,23 +12,21 @@ const dataProjects = [
         
         `, 
         fotoSrc: 'https://user-images.githubusercontent.com/91575842/181264963-fe20f879-eb82-4f07-bee1-5e8de94cd37f.png',
-        repository: 'https://github.com/rhuanbello/origin-nlw-heat',
-        site: 'https://dowhile2021-rhuanbello.vercel.app/'
+        repository: 'https://github.com/Caiomafia/Instagram',
+        site: 'https://caiomafia.github.io/Instagram/'
 
     },
     {
-        title: 'Instagram',
-        date: '28 de Outubro de 2021',
-        description: `Daily Weather é uma aplicação web que exibe a condição climática de todas as cidades, bairros, estados ou países do mundo. Obtendo tanto os dados da temperatura atual, quanto os dos próximos 7 dias, além da velocidade do vento, nível de umidade, data/hora e temperatura máxima e mínima. <br><br>
+        title: 'Ricoflix',
+        date: '28 de Outubro de 2022',
+        description: `Esse e um dos projetos que mais gosto não só pelo tema que gosto de acompanhar, mas pelo enorme desafio que foi criar um sistemas desses responsivo e que ficasse o mais proximo da perfeição  <br><br>
 
         Esse projeto foi desenvolvido com as seguintes ferramentas: <br><br>
         
         • HTML5; <br>
-        • Vanilla JavaScript; <br>
-        • Compilador SASS; <br>
-        • Unsplash API; <br>
-        • Open Weather API (One Call & Current Weather Data); <br>
-        • LocalStorage API; <br>
+        • JavaScript; <br>
+        • Boostrap; <br>
+        • CSS (Flex-box); <br>
         • Moment.js; <br>
         `, 
         videoSrc: 'ttps://user-images.githubusercontent.com/91575842/181264963-fe20f879-eb82-4f07-bee1-5e8de94cd37f.png',
@@ -39,16 +37,14 @@ const dataProjects = [
     },
     {
         title: 'Calculadora',
-        date: '14 de Outubro de 2021',
-        description: `Esse é um projeto que eu desenvolvi a interface há dois meses atrás, mas que só fui me sentir confiante pra dar continuidade recentemente depois de avançar em meus estudos, pois meu objetivo era de construir toda a lógica do zero, sem utilizar a função eval(). <br><br> Eu ainda não tinha feito uma calculadora, e creio que esse seja um dos principais exercícios pra praticar a lógica de programação, então além de aplicar as funcionalidades e a interface da calculadora do Windows 10, tentei simular uma espécie de ambiente desktop, onde é possível abrir, fechar ou minimizar a aplicação. <br><br>  Algumas features que valem destacar: <br><br>
-        • É possível utilizar o teclado para realizar as operações matemáticas; <br>
-        • Ao "fechar" a calculadora os dados do display são apagados; <br>
+        date: '14 de Outubro de 2022',
+        description: `Esse é um projeto que eu desenvolvi a interface há dois meses atrás, mas que só fui me sentir confiante pra dar continuidade recentemente depois de avançar em meus estudos, pois meu objetivo era de construir toda a lógica do zero(). <br><br> Eu ainda não tinha feito uma calculadora, e creio que esse seja um dos principais exercícios pra aplicar os conhecimentos<br><br>
         • Só é possível adicionar um ponto decimal; <br>
         • O tamanho da fonte do display se adapta conforme os números são adicionados; <br>
         • Responsivo para Mobile;`,
 
         repository: 'https://github.com/Caiomafia/Calculadora',
-        site: 'https://calculator-rhuanbello.vercel.app/'
+        site: 'https://caiomafia.github.io/Calculadora/'
 
     },
     {
