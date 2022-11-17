@@ -201,8 +201,6 @@ const dataProjects = [
     },
     {
         title: 'Wildbeast',
-        date: '09 de Julho de 2021',
-        description: .
         videoSrc: 'https://streamable.com/e/dyan89',
         linkedin: 'https://www.linkedin.com/posts/rhuanbello_opentowork-css-html-activity-6819437498171822080-BTlV',
         repository: 'https://github.com/rhuanbello/wildbeast',
