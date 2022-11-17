@@ -202,7 +202,7 @@ const dataProjects = [
     {
         title: 'Wildbeast',
         date: '09 de Julho de 2021',
-        description: "Projeto de mais um curso da Origamid, dessa vez sobre CSS Grid Layout, que sinceramente é uma mão na roda. Nunca foi tão fácil mudar totalmente a composição de um site, você literalmente pode fazer isso com uma linha de código. Após conhecer todos os conceitos dessa especificação (como o Grid Template Columns, Rows, Areas e Auto) foi desenvolvido o site Wildbeast para fixar na prática todo o aprendizado.",
+        description: .
         videoSrc: 'https://streamable.com/e/dyan89',
         linkedin: 'https://www.linkedin.com/posts/rhuanbello_opentowork-css-html-activity-6819437498171822080-BTlV',
         repository: 'https://github.com/rhuanbello/wildbeast',
