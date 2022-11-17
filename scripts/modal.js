@@ -192,7 +192,6 @@ const dataProjects = [
     {
         title: 'Le Scone',
         date: '01 de Outubro de 2021',
-        description: "Projeto desenvolvido durante o curso de CSS com SASS da Origamid.",
         videoSrc: 'https://streamable.com/e/ajfxe4',
         linkedin: '',
         repository: 'https://github.com/rhuanbello/lesconde',
