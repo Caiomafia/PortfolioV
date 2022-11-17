@@ -133,7 +133,6 @@ const dataProjects = [
         date: '30 de Julho de 2021',
         description: "Cultflix é um projeto que nasce desse fascínio e me convida a pôr em prática todo o aprendizado adquirido no Bootcamp HTML Web Developer da Digital Innovation One Inc. Ter a oportunidade de criar a minha própria versão de uma Plataforma de Streaming e ter a liberdade de inserir meus filmes favoritos é extremamente gratificante.",
         videoSrc: 'https://streamable.com/e/1tsfrm',
-        linkedin: 'https://www.linkedin.com/posts/rhuanbello_ui-opentowork-css-activity-6821251240840835072-6GP0',
         repository: 'https://github.com/rhuanbello/cultflix',
         site: 'https://rhuanbello.github.io/cultflix/'
 
