@@ -143,8 +143,8 @@ const dataProjects = [
         title: 'Dashboard Star Wars',
         date: '08 de Julho de 2021',
         description: "Reunindo dois universos que eu amo: cinema e desenvolvimento. Assim, os estudos se tornam realmente divertidos! <br><br> Dashboard Star Wars é um projeto que realiza requisições de uma API externa para trazer diversos dados sobre o universo da saga. Projeto desenvolvido em um dia, apenas para praticar alguns conceitos.",
-        videoSrc: 'https://streamable.com/e/84kzet',
-        linkedin: 'https://www.linkedin.com/posts/rhuanbello_desenvolvimento-ui-starwars-activity-6818976321042038784-FPYl',
+        
+       ,
         repository: 'https://github.com/rhuanbello/clone-windowsCalculator',
         site: 'https://rhuanbello.github.io/dashboard-starwars/'
 
