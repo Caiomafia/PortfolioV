@@ -199,14 +199,7 @@ const dataProjects = [
         site: 'https://lesconde-rhuanbello.vercel.app/'
 
     },
-    {
-        title: 'Wildbeast',
-        videoSrc: 'https://streamable.com/e/dyan89',
-        linkedin: 'https://www.linkedin.com/posts/rhuanbello_opentowork-css-html-activity-6819437498171822080-BTlV',
-        repository: 'https://github.com/rhuanbello/wildbeast',
-        site: 'https://rhuanbello.github.io/wildbeast/'
 
-    },
 
 ]
 
