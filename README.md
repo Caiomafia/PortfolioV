@@ -16,14 +16,7 @@
 
 
 link : https://caiomafia.github.io/Portfolio/
-## Autores
 
-- [@Caio Mafra](https://github.com/Caiomafia)
-
-
-## Documentação
-
-[Documentação](https://link-da-documentação)
 
 
 ##         <h2 align="center"> Aprendizados  </h2>
