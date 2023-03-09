@@ -600,6 +600,7 @@ section#projects {
                         display: block;
                         position: absolute;
                         width: 100%;
+                        max-width: 250px;
                         height: .3rem;
                         bottom: .1rem;
                         background-image: $line-gradient;
@@ -652,7 +653,7 @@ section#projects {
                     padding: 1.5rem 2rem 1.2rem 2rem;
                     display: none;
                     position: absolute;
-                    width: 90%;
+                    width: 250px;
                     align-items: center;
                     justify-content: space-between;
                     border-radius: 0 0 2rem 2rem;
