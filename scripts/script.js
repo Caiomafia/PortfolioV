@@ -135,7 +135,7 @@ const initTypingAnimation = () => {
             })
 
         } else if (element == span) {
-            element.innerHTML = 'Rhuan Bello :)'
+            element.innerHTML = 'Caio Mafra :)'
             const textToArray = element.innerHTML.split('')
             element.innerHTML = ''
 
@@ -144,7 +144,7 @@ const initTypingAnimation = () => {
             })
 
         } else {
-            element.innerHTML = 'Desenvolvedor Front-End e UI Designer'
+            element.innerHTML = 'Desenvolvedor Front-End '
             const textToArray = element.innerHTML.split('')
             element.innerHTML = ''
 
