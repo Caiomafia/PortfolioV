@@ -593,6 +593,7 @@ section#projects {
                 .cover {
                     position: relative;
                     cursor: pointer;
+                    max-width: 150px;
 
                     &::after {
                         content: '';
