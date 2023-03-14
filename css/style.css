@@ -7,7 +7,7 @@
     --shadow-black-100:0 5px 15px rgba(0,0,0,0.1);
     --shadow-black-300:0 5px 15px rgba(0,0,0,0.3);
     --black-900:#000;
-    --black-400:#555555;
+    --black-400:#dbdbdb;
     --black-100:#f7f7f7;
     --white:#fff;
     --black-alpha-100:rgba(0,0,0,0.05);
@@ -18,13 +18,16 @@ body
     font-size: 16px;
     font-weight: normal;
     overflow-x: hidden;
-    background-color: var(--white);
+    background-color: var(--black-900);
+    color: var(--white);
 }
 *
 {
     margin: 0;
     padding: 0;
     outline: none !important;
+    background-color: #000;
+    color: white;
 }
 img
 {
@@ -116,7 +119,7 @@ a,a:hover
 {
     height: 6px;
     width: 24px;
-    background-color: #dddddd;
+    background-color: #000000;
     display: inline-block;
     margin: 0 4px;
     border-radius: 5px;
@@ -128,10 +131,11 @@ a,a:hover
 /* navbar */
 .navbar
 {
-    background-color: var(--white);
+    background-color: var(--black-900);
     padding: 30px 0;
     box-shadow: 0 10px 10px rgba(0,0,0,0.08);
     transition: all 0.5s ease;
+    color: white;
 }
 .navbar.navbar-shrink
 {
@@ -417,7 +421,7 @@ a,a:hover
 }
 .about-content .single-info .info-text p span
 {
-    color: var(--black-900);
+    color: var(--white);
     font-weight: 500;
 }
 .hire-me
