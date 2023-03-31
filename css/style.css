@@ -1158,29 +1158,25 @@ a,a:hover
     }
 }
 
-/*lterações texto   
-.name { 
-    box-shadow: .6em 0 0 #05ffa3;
-    margin: 2rem 1rem;
-    width: 23ch;
-    overflow: hidden;
-    color: #FFF;
-    white-space: nowrap;
-    animation: caret .5s step-end infinite alternate,
-               type 5s steps(8, end)
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #b808e9 #f2f2f2;
   }
-  
-  
-  
-  @keyframes type {
-    0% {
-      width: 0;
-    }
-  
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+    height: 5px;
   }
-  @keyframes caret { 
-    50% { 
-      box-shadow: .6em 0 0 transparent;
-    }
+
+  *::-webkit-scrollbar-track {
+    background: #000000;
   }
-  */
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #941eb4;
+    border-radius: 10px;
+    border: 3px none #ffffff;
+  }
