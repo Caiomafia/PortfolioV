@@ -15,4 +15,18 @@ const openModal = () => {
 
 
 
-const btnModal  = document.querySelector('.btnModal')
+
+
+
+window.onclick = function(event){
+    const modal = document.querySelector('.modal');
+    if(event.target == modal){
+        openModal()
+    }
+}
+
+const closemodal =  () => {
+    document.querySelector('.modal').style.display = "none"
+}
+
+
