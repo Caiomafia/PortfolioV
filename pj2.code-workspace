@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"name": "pj2",
+			"path": "."
+		},
+		{
+			"name": "assets",
+			"path": "../../../../Desktop/Portfolio_Website-main/assets"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "pj2",
+		"liveServer.settings.port": 5501
+	}
+}
