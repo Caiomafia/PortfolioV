@@ -926,7 +926,7 @@ footer {
 
 
 
-.go-top-button {
+.go-top-button  , .go-vai i {
     width: 0rem;
     height: 0rem;
     background: #07770d;
@@ -945,7 +945,7 @@ footer {
 
 
 
-.go-top-button i {
+.go-top-button i  {
     position: absolute;
     font-size: 1.7rem;
     top: 48%;
@@ -961,7 +961,7 @@ footer {
     z-index: 10;
 }
 
-.show .go-top-button {
+.show .go-top-button  , .go-zap{
     animation: popup .3s ease-in-out;
     width: 6rem;
     height: 6rem;
