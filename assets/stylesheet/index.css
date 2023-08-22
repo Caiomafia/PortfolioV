@@ -584,11 +584,12 @@ img.logo-sena {
 
 .cards--proyectos {
     border-radius: 20px;
-    padding-bottom: 2rem;
+    padding-bottom: 5rem;
     background-color: var(--eerie-black);
     min-width: 33rem;
     max-width: 38rem;
     box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%), 0 25px 10px -24px rgb(5 5 5 / 10%);
+    height:150rem;
 }
 
 .card_JuegoAhorcado {
@@ -668,12 +669,12 @@ img.logo-sena {
 }
 
 .btn_demo img {
-    width: 2rem;
+    width: 3rem;
     margin-right: .8rem;
 }
 
 .btn_repo img {
-    width: 2rem;
+    width: 3rem;
     margin-right: .8rem;
 }
 
