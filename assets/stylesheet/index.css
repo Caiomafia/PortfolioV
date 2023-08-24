@@ -290,34 +290,40 @@ span+span {
 .home_text-3 {
     font-family: 'Cooper Hewitt';
     color: var(--white);
-    font-size: 1.4rem;
+    font: 1.4rem  ;
     text-transform: uppercase;
     letter-spacing: .2rem;
-    width: 28rem;
+    width: 17ch;
     margin: 0 auto;
     text-align: start;
+    
+    border-right: 4px solid;
+
+
+    white-space: nowrap;
+    overflow: hidden;
+    animation:typing 4s  steps(17 ,end) ,
+    blinking 0.5s infinite step-end  alternate;
 }
 
-.text-type {
-    position: relative;
-}
-
-.text-type::after {
-    content: '|';
-    font-weight: bold;
-    position: absolute;
-    right: 0;
-    color: var(--beaver);
-    background-color: var(--jet);
-    width: 100%;
-    animation: typing 4s steps(28) alternate infinite;
-}
 
 @keyframes typing {
-    to{
-        width: 0%;
+    front{
+        width: 0;
+    }   
+}
+
+@keyframes blinking {
+    50%{
+        border-color: transparent;
     }
 }
+
+
+
+
+
+
 
 .container_parrafo-info {
     display: none;
