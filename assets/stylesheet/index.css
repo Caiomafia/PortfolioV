@@ -287,41 +287,41 @@ span+span {
     margin-bottom: 1rem;
 }
 
+
+
+
+
 .home_text-3 {
     font-family: 'Cooper Hewitt';
     color: var(--white);
     font: 1.4rem  ;
     text-transform: uppercase;
     letter-spacing: .2rem;
-    width: 17ch;
-    margin: 0 auto;
+
     text-align: start;
-    
-    border-right: 4px solid;
 
-
+    overflow: hidden; 
     white-space: nowrap;
-    overflow: hidden;
-    animation:typing 4s  steps(17 ,end) ,
-    blinking 0.5s infinite step-end  alternate;
-}
-
-
-@keyframes typing {
-    front{
-        width: 0;
-    }   
-}
-
-@keyframes blinking {
-    50%{
-        border-color: transparent;
+    border-right: 4px solid var(--beaver); 
+    width: 0 ;
+    animation: typing 10s steps(40), erasing 4s steps(40) infinite alternate;
+  }
+  
+  @keyframes typing {
+    to {
+      width: 80%; 
     }
-}
-
-
-
-
+  }
+  
+  @keyframes erasing {
+    from {
+      width: 80%; 
+    }
+    to {
+      width: 0; /* Volta para largura zero para reiniciar o ciclo */
+    }
+  }
+  
 
 
 
