@@ -92,3 +92,8 @@ nav.nav_menu.active {
     margin: 0 auto;
     width: 80%;
 }
+
+
+.cards_container--proyectos{
+    height: 5rem;
+}
