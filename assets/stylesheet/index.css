@@ -323,6 +323,32 @@ span+span {
   }
   
 
+  @media (max-width : 780px){
+    .home_text-3 {
+        font-size: 2rem;
+        color: red;
+        text-align: center;
+        width: 0;
+        animation: none;
+        flex-direction: center;
+        animation: typing 10s steps(40), erasing 4s steps(40) infinite alternate;
+    }
+    @keyframes typing {
+        to {
+          width: 0%; 
+        }
+      }
+      
+      @keyframes erasing {
+        from {
+          width: 80%; 
+        }
+        to {
+          width: 0; /* Volta para largura zero para reiniciar o ciclo */
+        }
+      }
+  }
+
 
 
 .container_parrafo-info {
@@ -585,7 +611,8 @@ img.logo-sena {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 100%
+    max-width: 100%;  
+    min-height: 150rem;
 }
 
 .cards--proyectos {
@@ -595,8 +622,8 @@ img.logo-sena {
     min-width: 33rem;
     max-width: 38rem;
     box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%), 0 25px 10px -24px rgb(5 5 5 / 10%);
-    height:150rem;
-}
+    height:46rem;
+ }
 
 .card_JuegoAhorcado {
     margin-bottom: 4rem;
