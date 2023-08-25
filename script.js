@@ -1,5 +1,4 @@
 const btn = document.getElementById('button');
-const sectionAll = document.querySelectorAll('section[id]');
 const inputName = document.querySelector('#nombre');
 const inputEmail = document.querySelector('#email');
 
@@ -32,34 +31,26 @@ btn.addEventListener('click', function() {
     }
 });
 
-window.addEventListener('scroll', () => {
-    const scrollY = window.pageYOffset;
-    sectionAll.forEach((current) => {
-        const sectionHeight = current.offsetHeight;
-        const sectionTop = current.offsetTop - 100;
-        const sectionId = current.getAttribute('id');
+const sections = document.querySelectorAll('section');
 
-        if (scrollY > sectionTop && scrollY < sectionTop + sectionHeight) {
-            document.querySelector('nav a[href*=' + sectionId + ']').classList.add('active');
-        }
-        else {
-            document.querySelector('nav a[href*=' + sectionId + ']').classList.remove('active');
-        }
-    });
-});
+window.addEventListener("scroll", () => {
+  const currentScroll = window.pageYOffset;
 
-window.onscroll = function() {
-    if (document.documentElement.scrollTop > 100) {
-        document.querySelector('.go-top-container').classList.add('show');
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 50; // Adjust offset to give a little buffer
+    const sectionBottom = sectionTop + section.offsetHeight;
+
+    if (currentScroll >= sectionTop && currentScroll <= sectionBottom) {
+      const sectionId = section.getAttribute("id");
+      const activeLink = document.querySelector(`.top-menu a[href="#${sectionId}"]`);
+      
+      document.querySelectorAll(".top-menu a").forEach(link => {
+        link.classList.remove("active");
+      });
+
+      if (activeLink) {
+        activeLink.classList.add("active");
+      }
     }
-    else {
-        document.querySelector('.go-top-container').classList.remove('show');
-    }
-}
-
-document.querySelector('.go-top-container').addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
+  });
 });
