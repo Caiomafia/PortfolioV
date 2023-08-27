@@ -88,6 +88,7 @@ div.btn {
 }
 
 .home_text-3 {
+    text-align: start;
     margin: 0 0 2rem 0;
     font-size: 1.8rem;
     width: 35rem;
@@ -117,6 +118,7 @@ div.btn {
     border: 1px solid var(--beaver);
     margin-right: 1rem;
     transition: .2s;
+    width: 50rem;
 }
 
 .cv_button:hover {
@@ -139,6 +141,10 @@ div.btn {
     border: none;
     cursor: pointer;
     transition: .4s;
+    height: 5rem;
+    width: 20rem;
+    color: white;
+    font-size: 2rem;
 }
 
 .contact_button:hover {
@@ -220,7 +226,8 @@ div.btn {
     grid-template-columns: 13rem 13rem 13rem 13rem;
     grid-template-rows: 14rem 14rem;
     padding: 0;
-    margin-top: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
 }
 
 .cards--habilidades {
@@ -330,3 +337,7 @@ div.btn {
     margin: 0;
     padding: 4rem 3rem;
 }
+
+
+
+
