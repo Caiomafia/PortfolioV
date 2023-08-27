@@ -287,69 +287,37 @@ span+span {
     margin-bottom: 1rem;
 }
 
-
-
-
-
 .home_text-3 {
     font-family: 'Cooper Hewitt';
     color: var(--white);
-    font: 1.4rem  ;
+    font-size: 1.4rem;
     text-transform: uppercase;
     letter-spacing: .2rem;
-
+    width: 28rem;
+    margin: 0 auto;
     text-align: start;
+}
 
-    overflow: hidden; 
-    white-space: nowrap;
-    border-right: 4px solid var(--beaver); 
-    width: 0 ;
-    animation: typing 10s steps(40), erasing 4s steps(40) infinite alternate;
-  }
-  
-  @keyframes typing {
-    to {
-      width: 80%; 
-    }
-  }
-  
-  @keyframes erasing {
-    from {
-      width: 80%; 
-    }
-    to {
-      width: 0; /* Volta para largura zero para reiniciar o ciclo */
-    }
-  }
-  
+.text-type {
+    position: relative;
+}
 
-  @media (max-width : 780px){
-    .home_text-3 {
-        font-size: 2rem;
-        color: red;
-        text-align: center;
-        width: 0;
-        animation: none;
-        flex-direction: center;
-        animation: typing 10s steps(40), erasing 4s steps(40) infinite alternate;
+.text-type::after {
+    content: '|';
+    font-weight: bold;
+    position: absolute;
+    right: 0;
+    color: var(--beaver);
+    background-color: var(--jet);
+    width: 100%;
+    animation: typing 4s steps(28) alternate infinite;
+}
+
+@keyframes typing {
+    to{
+        width: 0%;
     }
-    @keyframes typing {
-        to {
-          width: 0%; 
-        }
-      }
-      
-      @keyframes erasing {
-        from {
-          width: 80%; 
-        }
-        to {
-          width: 0; /* Volta para largura zero para reiniciar o ciclo */
-        }
-      }
-  }
-
-
+}
 
 .container_parrafo-info {
     display: none;
@@ -611,19 +579,17 @@ img.logo-sena {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 100%;  
-    min-height: 150rem;
+    max-width: 100%
 }
 
 .cards--proyectos {
     border-radius: 20px;
-    padding-bottom: 5rem;
+    padding-bottom: 2rem;
     background-color: var(--eerie-black);
     min-width: 33rem;
     max-width: 38rem;
     box-shadow: 0 10px 16px -6px rgb(5 5 5 / 30%), 0 25px 10px -24px rgb(5 5 5 / 10%);
-    height:46rem;
- }
+}
 
 .card_JuegoAhorcado {
     margin-bottom: 4rem;
@@ -702,12 +668,12 @@ img.logo-sena {
 }
 
 .btn_demo img {
-    width: 3rem;
+    width: 2rem;
     margin-right: .8rem;
 }
 
 .btn_repo img {
-    width: 3rem;
+    width: 2rem;
     margin-right: .8rem;
 }
 
@@ -861,7 +827,7 @@ footer {
 
 .link_home a {
     color: var(--beaver);
-    font-size: 5rem;
+    font-size: 3rem;
     font-family: 'Cooper Hewitt';
     text-decoration: none;
     letter-spacing: 2px;
@@ -916,57 +882,44 @@ footer {
     color: var(--beaver);
 }
 
+/* Botón ir arriba */
 
+.go-top-container {
+    position: fixed;
+    bottom: 6rem;
+    right: 0rem;
+    width: 6rem;
+    height: 6rem;
+    z-index: -2;
+}
 
-
-
-
-
-.go-zap{position:fixed;
-    width:60px;
-    height:60px;
-    bottom:40px;
-    right:40px;
-    background-color:#07770d;
+.go-zap{
+    position:fixed;
+    width:6rem;
+    height:6rem;
+    bottom:4rem;
+    right:1rem;
+    background-color:#09620d;
     color:#FFF;
     border-radius:50px;
     text-align:center;
-    font-size:30px;
+    font-size:3rem;
     box-shadow: 1px 1px 2px #888;
       z-index:2000;
     }
 
     .go-zap i {margin-top: 16px; color: white;}
-        
-    
- 
 
 
 
-
-
-/* Botón ir arriba */
-
-.go-top-container{
-    position: fixed;
-    bottom: 8rem;
-    right: 1rem;
-    width: 6rem;
-    height: 6rem;
-    z-index: -1;
-}
-
-
-
-
-.go-top-button  , .go-vai i {
+.go-top-button {
     width: 0rem;
     height: 0rem;
-    background: #07770d;
+    background: #09620d;
     box-shadow: 0px 6px 22px -6px rgba(0,0,0,0.75);
     border-radius: 50%;
     cursor: pointer;
-    top: 50%;
+    top: 100%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -1;
@@ -976,9 +929,7 @@ footer {
 
 
 
-
-
-.go-top-button i  {
+.go-top-button i {
     position: absolute;
     font-size: 1.7rem;
     top: 48%;
@@ -988,13 +939,11 @@ footer {
     transition: .2s;
 }
 
-
-
 .show {
     z-index: 10;
 }
 
-.show .go-top-button  , .go-zap{
+.show .go-top-button {
     animation: popup .3s ease-in-out;
     width: 6rem;
     height: 6rem;

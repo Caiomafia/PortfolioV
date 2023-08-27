@@ -127,9 +127,6 @@ div.btn {
 
 .contact_button {
     display: inline-block;
-    width: 25rem;
-    height: 5rem;
-        
     background-color: var(--beaver);
     border-radius: 3rem;
     padding: .5rem 3.6rem;
@@ -142,7 +139,6 @@ div.btn {
     border: none;
     cursor: pointer;
     transition: .4s;
-    font-size: 2.5rem;
 }
 
 .contact_button:hover {
@@ -152,7 +148,7 @@ div.btn {
 }
 
 .links {
-    width: 10%;
+    width: 5%;
     flex-direction: column;
     justify-content: flex-end;
     padding: 0 3rem 2rem 3rem;
@@ -160,7 +156,6 @@ div.btn {
 
 .links img {
     margin: .7rem 0 .7rem 0;
-    width: 5rem;
 }
 
 /* Sobre Mí */
@@ -225,7 +220,7 @@ div.btn {
     grid-template-columns: 13rem 13rem 13rem 13rem;
     grid-template-rows: 14rem 14rem;
     padding: 0;
-    margin-top: 2rem; margin-bottom: 5rem;
+    margin-top: 2rem;
 }
 
 .cards--habilidades {
