@@ -41,7 +41,7 @@ function updateMenuOnScroll() {
   const scrollY = window.pageYOffset;
 
   sections.forEach((section) => {
-    const sectionTop = section.offsetTop - 200;
+    const sectionTop = section.offsetTop - 5000;
     const sectionHeight = section.offsetHeight;
     const sectionId = section.getAttribute('id');
     const link = document.querySelector(`nav a[href="#${sectionId}"]`);
