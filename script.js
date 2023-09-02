@@ -32,34 +32,46 @@ btn.addEventListener('click', function() {
     }
 });
 
-window.addEventListener('scroll', () => {
-    const scrollY = window.pageYOffset;
-    sectionAll.forEach((current) => {
-        const sectionHeight = current.offsetHeight;
-        const sectionTop = current.offsetTop - 100;
-        const sectionId = current.getAttribute('id');
+// Selecione todas as seções e links do menu
+const sections = document.querySelectorAll('section');
+const menuLinks = document.querySelectorAll('nav a');
 
-        if (scrollY > sectionTop && scrollY < sectionTop + sectionHeight) {
-            document.querySelector('nav a[href*=' + sectionId + ']').classList.add('active');
-        }
-        else {
-            document.querySelector('nav a[href*=' + sectionId + ']').classList.remove('active');
-        }
-    });
-});
+// Função para verificar qual seção está visível no momento e atualizar o menu
+function updateMenuOnScroll() {
+  const scrollY = window.pageYOffset;
 
-window.onscroll = function() {
-    if (document.documentElement.scrollTop > 100) {
-        document.querySelector('.go-top-container').classList.add('show');
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop - 100;
+    const sectionHeight = section.offsetHeight;
+    const sectionId = section.getAttribute('id');
+    const link = document.querySelector(`nav a[href="#${sectionId}"]`);
+
+    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+      link.classList.add('active');
+    } else {
+      link.classList.remove('active');
     }
-    else {
-        document.querySelector('.go-top-container').classList.remove('show');
-    }
+  });
+
+  // Mostrar ou ocultar o botão "voltar ao topo" com base no scroll
+  const goTopContainer = document.querySelector('.go-top-container');
+  if (scrollY > 100) {
+    goTopContainer.classList.add('show');
+  } else {
+    goTopContainer.classList.remove('show');
+  }
 }
 
+// Adicione um ouvinte de evento para atualizar o menu sempre que houver rolagem
+window.addEventListener('scroll', updateMenuOnScroll);
+
+// Adicione um ouvinte de evento para rolar suavemente para o topo quando o botão "voltar ao topo" for clicado
 document.querySelector('.go-top-container').addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
 });
+
+// Chame a função inicialmente para configurar o menu
+updateMenuOnScroll();
