@@ -31,6 +31,21 @@ nav.nav_menu.active {
     font-size: 3.6rem;
 }
 
+
+
+
+
+.links {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0 6rem 0;
+}
+
+.links img {
+    width: 4rem;
+    margin: 0 .5rem;
+}
+
 /* Sobre mi */
 
 .sobreMi {

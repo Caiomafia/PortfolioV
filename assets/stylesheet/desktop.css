@@ -153,16 +153,6 @@ div.btn {
     transition: 1s transform;
 }
 
-.links {
-    width: 5%;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 0 3rem 2rem 3rem;
-}
-
-.links img {
-    margin: .7rem 0 .7rem 0;
-}
 
 /* Sobre Mí */
 
